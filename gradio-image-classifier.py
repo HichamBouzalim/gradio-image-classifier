@@ -1,7 +1,6 @@
 # --- Import libraries ---
 import gradio as gr  # For creating the web interface
 import torch
-import requests
 from PIL import Image
 from torchvision import transforms
 
@@ -9,9 +8,9 @@ from torchvision import transforms
 model = torch.hub.load('pytorch/vision:v0.6.0', 'resnet18', pretrained=True)
 model.eval()
 
-# --- Load ImageNet class labels ---
-response = requests.get("https://git.io/JJkYN")
-labels = response.text.split("\n")
+# --- Load ImageNet class labels from local file ---
+with open("labels.txt") as f:  # Datei im gleichen Ordner speichern
+    labels = f.read().split("\n")
 
 # --- Function to predict image class ---
 def classify_image(image):
@@ -45,4 +44,4 @@ iface = gr.Interface(
 )
 
 # --- Launch Gradio app ---
-iface.launch(server_name="127.0.0.1", server_port= 7860)
+iface.launch(server_name="127.0.0.1", server_port=7860)
