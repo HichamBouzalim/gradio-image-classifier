@@ -54,13 +54,13 @@ cd gradio-image-classifier
 2. **Run the application**
 
 ```bash
-python app.py
+python gradio-image-classifier.py
 ```
 
 3. **Open the web interface** in your browser at:
 
 ```
-http://0.0.0.0:7860
+http://127.0.0.1:7860
 ```
 
 4. **Upload an image** and view the top 3 predicted labels.
