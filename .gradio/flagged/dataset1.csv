@@ -1,0 +1,2 @@
+inp,output,timestamp
+.gradio\flagged\inp\4beeec692a2cadfbc742\Panther.jpg,"{""label"": ""dhole"", ""confidences"": [{""label"": ""dhole"", ""confidence"": 0.02604413405060768}, {""label"": ""tusker"", ""confidence"": 0.02396051026880741}, {""label"": ""Komodo dragon"", ""confidence"": 0.013429554179310799}]}",2025-09-11 00:21:32.142704
