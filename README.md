@@ -1,4 +1,4 @@
-# 🖼️ Image Classification with ResNet-18
+# 🖼️ Image Classification with ResNet-18 (Gradio App)
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue?logo=python\&logoColor=white)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-1.13-red?logo=pytorch\&logoColor=white)](https://pytorch.org/)
@@ -77,12 +77,11 @@ model = torch.hub.load('pytorch/vision:v0.6.0', 'resnet18', pretrained=True)
 model.eval()
 ```
 
-2. **Fetch ImageNet Labels**
-   Class labels are downloaded from a public URL:
+2. **Load ImageNet Labels Locally**
 
 ```python
-response = requests.get("https://git.io/JJkYN")
-labels = response.text.split("\n")
+with open("labels.txt") as f:
+    labels = f.read().split("\n")
 ```
 
 3. **Classify Image**
@@ -139,3 +138,5 @@ See [LICENSE](LICENSE) for details.
 ## 🔗 Live Demo (Optional)
 
 You can run the app locally using Gradio or deploy it online for a live demo.
+
+
