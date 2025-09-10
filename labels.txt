@@ -3,6 +3,7 @@ goldfish
 great white shark
 tiger shark
 hammerhead
+Panther 
 electric ray
 stingray
 cock
