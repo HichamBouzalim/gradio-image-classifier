@@ -1,4 +1,4 @@
-# 🖼️ Image Classification with ResNet-18
+# 🖼️ Image Classification with ResNet-18 (Gradio App)
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue?logo=python\&logoColor=white)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-1.13-red?logo=pytorch\&logoColor=white)](https://pytorch.org/)
